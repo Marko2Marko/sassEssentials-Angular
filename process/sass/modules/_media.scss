@@ -1,0 +1,39 @@
+.sports > li.active{
+    //background: linear-gradient(to bottom, #2a2a2a,#2a2a2a) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-bottom:4px solid #003d99;
+}
+.imeSporta1.active {
+    // background: linear-gradient(to bottom, #2a2a2a,#2a2a2a) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background-color :  $fudbal;
+    // border-bottom:2px solid white;
+}
+.imeSporta2.active{
+    // background: linear-gradient(to bottom, #2a2a2a,#2a2a2a) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background-color : $kosarka;
+    // border-bottom:2px solid white;
+}
+.imeSporta4.active{
+    // background: linear-gradient(to bottom, #2a2a2a,#2a2a2a) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background-color : $tenis;
+    // border-bottom:2px solid white;
+}
+.imeSporta8.active{
+    // background: linear-gradient(to bottom, #2a2a2a,#2a2a2a) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background-color :  $odbojka;
+    // border-bottom:2px solid white;
+}
+.imeSporta11.active{
+    // background: linear-gradient(to bottom, #2a2a2a,#2a2a2a) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background-color :  $rukomet;
+    //border-bottom:2px solid white;
+}
+.imeSporta19.active{
+    // background: linear-gradient(to bottom, #2a2a2a,#2a2a2a) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background-color :  $bejzbol;
+    // border-bottom:2px solid white;
+}
+.imeSporta20.active{
+    // background: linear-gradient(to bottom, #2a2a2a,#2a2a2a) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background-color : #5F0740;
+    // border-bottom:2px solid white;
+}

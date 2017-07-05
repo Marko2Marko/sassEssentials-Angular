@@ -1,0 +1,76 @@
+
+
+
+.imeSporta1 { //background : $fudbal;
+              background: transparent url('https://www.promaster.rs/webres/football.png') no-repeat 6px 11px;
+              &:hover {
+                  //background: transparent url('https://www.promaster.rs/webres/football.png') no-repeat 6px 11px;
+                  //  width: 1;
+                  background-color : $fudbal;
+                  text-decoration:underline;}
+              // background : green;
+}
+//ovde ti je falila zatvorena zagrada i dobije se nesto apsolutno drugo od onog sto si hteo :)
+.imeSporta2 {
+    background: transparent url('https://www.promaster.rs/webres/basketball.png') no-repeat 6px 11px;
+    // width: 8%;
+    //background-color : red;
+    &:hover {
+        //background: transparent url('https://www.promaster.rs/webres/basketball.png') no-repeat 6px 11px;
+        // width: 8%;
+        background-color : $kosarka;
+        text-decoration:underline;
+    }
+}
+
+.imeSporta8 {
+
+    background: transparent url('https://www.promaster.rs/webres/volleyball.png') no-repeat 4px 11px;
+    //width: 16%;
+    //background-color : #005994;
+    &:hover {
+
+        //background: transparent url('https://www.promaster.rs/webres/volleyball.png') no-repeat 4px 11px;
+        //width: 16%;
+        background-color : $odbojka;
+        text-decoration:underline;}
+}
+.imeSporta4{
+    background: transparent url('https://www.promaster.rs/webres/tenis.png') no-repeat 7px 11px;
+    //width: 7%;
+    //background-color : #CAA317;
+    &:hover {
+        //background: transparent url('https://www.promaster.rs/webres/tenis.png') no-repeat 7px 11px;
+        //width: 7%;
+        background-color : $tenis;
+        text-decoration:underline;}
+}
+.imeSporta11 {
+
+    background: transparent url('https://www.promaster.rs/webres/handball.png') no-repeat 3px 11px;
+    //background-color : #005994;
+    &:hover {
+        //background: transparent url('https://www.promaster.rs/webres/handball.png') no-repeat 3px 11px;
+        background-color : $rukomet;
+        text-decoration:underline;}
+}
+
+.imeSporta19 {
+    //background-color : #188e66;
+    background:  transparent url('http://www.baseballgraphs.com/ball.gif') no-repeat 3px 11px;
+    &:hover {
+        background-color : $bejzbol;
+        text-decoration:underline;}
+}
+.imeSporta20 {
+    background: transparent url('https://www.promaster.rs/webres/basketball.png') no-repeat 6px 11px;
+    // width: 8%;
+    //background-color : red;
+    &:hover {
+        //background: transparent url('https://www.promaster.rs/webres/basketball.png') no-repeat 6px 11px;
+        // width: 8%;
+        background-color : #5F0740;
+
+    }
+
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <body>
+
+        <div ng-app="myApp" ng-controller="customCtrl" >
+            <div class="sportNames">
+
+                <ul class="sports" > <!-- class="imeSporta{{sportId}}" -->
+                    <li  class="imeSporta{{sportId}}"  ng-class="{'active' : isActiveSport(sportId)}" ng-click="setActiveSport(sportId)" ng-repeat="sportId in sports" >{{getSportName(sportId)}}</li>
+                </ul>
+
+            </div> 
+            <table class="sportEvents">
+                <tbody>
+                    <tr>
+                        <th id="status">Status</th>
+                        <th>Sifra</th>
+                        <th>Datum</th>                          
+                        <!--  <th>liga</th> -->
+                        <!-- <th>sport</th> -->
+                        <th>Domacin</th>
+                        <th>Gost</th>
+                        <th id="periodi">Periodi</th>
+                        <th id="rezultat">Rezultat</th>
+                        <th id="kvota1">1</th>
+                        <th>X</th>
+                        <th id="kvota2">2</th>
+                        <!--<th>ki1</th>
+                        <th>kiX</th>
+                        <th>ki2</th>-->
+                        <!-- <th>ki1</th>-->
+                    </tr>
+                    <tr ng-repeat="x in myData" ng-show="x.sportId == activeSportId">
+                        <td ng-class="{ 'winner1': x.statusText == 'Finished' }">{{ x.statusText}}</td>
+                        <td>{{ x.code}}</td>
+                        <td>{{ x.playDateTime}}</td>
+                        <!--  <td>{{ x.league }}</td> -->
+                        <!--   <td>{{ x.sport }}</td> -->
+                        <td ng-class="{ 'winner1': (x.win_home == 'winner')}">{{ x.home}}</td>
+                        <td ng-class="{ 'winner1': (x.win_away == 'winner')}">{{ x.away}}</td>
+                        <!--   <td>{{ x.result.scores_by_period[0]["h"] + ' ' + x.result.scores_by_period[0]["a"]   }}  
+                             {{  x.result.scores_by_period[1]["h"] + ' ' + x.result.scores_by_period[1]["a"]  }}
+                             {{  x.result.scores_by_period[2]["h"] + ' ' + x.result.scores_by_period[2]["a"]  }}
+                             {{  x.result.scores_by_period[3]["h"] + ' ' + x.result.scores_by_period[3]["a"]  }}</td> -->
+                        <td class="periodi"><ul ng-repeat="period in  x.result.scores_by_period" class="sportbr{{x.sportId}}" id="periods" >
+                                <li class="per{{x.sportId}}">{{ period.h}}</li><li> {{ period.a}}</li>
+                            </ul>
+                        </td> 
+                        <!-- <td>{{ x.result.totals[0]["h"] + ' ' + x.result.totals[0]["a"] }}</td> -->
+                        <td ng-class="{ 'winner1': (x.statusText == 'Finished')}"><span  ng-repeat="rezultat in x.result.totals" class="rez{{x.sportId}}">{{ rezultat.h}}</span> <span ng-repeat="rezultat in x.result.totals">{{ rezultat.a}}</span></td>
+                        <td ng-class="{ 'winner1': (x.odd1_class == 'winner')}" id="konishod1">{{ x.odd1}}</td> 
+                        <td ng-class="{ 'winner1': (x.oddX_class == 'winner')}" id="konishodX">{{ x.oddX}}</td>
+                        <td ng-class="{ 'winner1': (x.odd2_class == 'winner')}" id="konishod2">{{ x.odd2}}</td>
+                        <!-- <td>{{ x.odd1_class }}</td>
+                        <td>{{ x.oddX_class }}</td>
+                        <td>{{ x.odd2_class }}</td>-->
+                        <!--  <td ng-class="{ 'winner1': (x.win_home == 'winner' )}">{{x.win_home}}</td> -->
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <script src="js/script.js">
+
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,149 @@
+.periodi{
+padding: 0;
+}
+
+.sportEvents             {
+      margin  : auto ;
+    margin-top : 0px;
+}
+.sportNames             {
+     // margin  : auto ;
+    //margin-top : 0px;
+    @extend .sportEvents;
+    margin-bottom :0 px;
+  // background: linear-gradient(to bottom, #2a2a2a,#2a2a2a) repeat scroll 0 0 rgba(0, 0, 0, 0); 
+}
+
+ul.sportbr1 li            {
+      justify-content: center;
+     align-items: center;
+     display: inline;                             
+    // flex-direction: row;
+     color :$fudbal;
+     border:0;
+     padding: 0px;
+   margin: 0;
+    font-size :20px;
+    text-align: center;
+   //  font-weight: bold; 
+   line-height: 1em;
+    line-height: 1em;
+} 
+ul.sportbr2 li            {
+    font-size :14px;
+   color :$kosarka; 
+   list-style:none;
+    border:0;
+   font-weight: bold;
+  padding: 0;
+   text-align: center;
+  } 
+ul.sportbr4 li            {
+  
+   color :$tenis; 
+   list-style:none;
+   font-size :14px;
+   border:0;
+   font-weight: bold;
+   padding: 0;
+} 
+ul.sportbr8 li            {
+     border:0;
+   color :$odbojka; 
+   list-style:none;
+    font-size :14px;
+   font-weight: bold;
+   padding: 0;
+} 
+ul.sportbr11 li            {
+   
+     align-items: center;
+     display: inline;                             
+     flex-direction: row;
+     color :$rukomet;
+     border:0;
+     padding: 0px;
+   margin: 0;
+    font-size :15px;
+    text-align: center;
+     font-weight: bold; 
+   line-height: 1em;
+} 
+
+ul.sportbr19 li            {
+     font-size :14px;
+   color :$bejzbol; 
+   list-style:none;
+    border:0;
+  margin :auto;
+   font-weight: bold;
+   padding: 0;
+} 
+
+li.per1:first-child::after{
+   content:  " :";
+}
+li.per11:first-child::after{
+   content:  " :";
+}
+.per1 {
+line-height:1px;
+}
+.per2 {
+//padding-top : 0px;
+//line-height: 1px;
+@extend .per4;
+}
+.per4 {
+//padding-top : 0px;
+line-height: 1px;
+}
+.per8 {
+//padding-top : 0px;
+//line-height: 1px;
+@extend .per4;
+
+}
+.per19 {
+//padding-top : 0px;
+line-height: 1px;
+}
+.per11 {
+//padding-top : 0px;
+line-height: 1px;
+}
+span.rez2:first-child::after{
+    content : ' :' ;
+}
+span.rez4:first-child::after{
+    content : ' :' ;
+}
+span.rez8:first-child::after{
+    content : ' :' ;
+}
+span.rez19:first-child::after{
+    content : ' :' ;
+}
+
+.winner1 {
+  color : blue;
+  font-weight: bold;
+}
+#status {
+ border-left : 0px;
+ border-top : 0px;
+}
+#rezultat {
+border-right : 0px;
+border-left : 0px;
+}
+#periodi {
+border-right : 0px;
+}
+#kvota1 {
+border-left : 0px;
+border-right : 0px;
+}
+#kvota2 {
+border-right : 0px;
+}

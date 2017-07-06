@@ -4,7 +4,10 @@
   "description": "",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/Marko2Marko/sassEssentials-Angular"
+  },
+   "scripts": {
+    "prestart": "npm install"
   },
   "author": "Marko2Marko",
   "devDependencies": {

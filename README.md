@@ -5,6 +5,11 @@
 	- [git](https://git-scm.com/)
 	- [gulp](http://gulpjs.com/)
 	- [ruby](https://www.ruby-lang.org/en/)
+	
+a) Install Ruby on your system (https://rubyinstaller.org/)
+b) run  `> gem install sass " `command
+c) Check the version of the sass installed with this command
+-` sass -v `
 
 2. Clone this repository into your local machine using the terminal (mac) or Gitbash (PC) `> git clone https://github.com/Marko2Marko/sassEssentials-Angular`
 3. CD to the folder `cd sassEssentials-Angular`

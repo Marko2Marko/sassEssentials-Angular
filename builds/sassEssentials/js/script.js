@@ -1,6 +1,7 @@
 var app = angular.module('myApp', []);
 app.controller('customCtrl', function ($scope, $http) {
-    $http.get("https://www.promaster.rs:8083/web/WebSvc.GetResultFeed?rev=0").then(function (response) {
+    //$http.get("https://www.promaster.rs:8083/web/WebSvc.GetResultFeed?rev=0").then(function (response) {
+	  $http.get("https://www.promaster.rs/web/WebSvc.GetResultFeed?rev=0").then(function (response) {	
         $scope.myData = response.data.events;
         $scope.sports = []
         $scope.events = []

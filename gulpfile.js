@@ -1,7 +1,7 @@
 var gulp = require('gulp'),
     jshint = require('gulp-jshint'),
     sass = require('gulp-ruby-sass'),
-    sourcemaps = require('gulp-sourcemaps'),
+    sourcemap = require('gulp-sourcemaps'),
     webserver = require('gulp-webserver');
 
 gulp.task('js', function() {
@@ -18,7 +18,8 @@ gulp.task('sass', function () {
     .on('error', function (err) {
         console.error('Error!', err.message);
     })
-    .pipe(sourcemaps.write())
+    .pipe(sourcemap.write())
+	 
     .pipe(gulp.dest('builds/sassEssentials/css'));
 });
 

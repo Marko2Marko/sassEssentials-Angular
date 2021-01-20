@@ -6,7 +6,7 @@
     "type": "git",
     "url": "https://github.com/Marko2Marko/sassEssentials-Angular"
   },
-   "scripts": {
+  "scripts": {
     "prestart": "npm install"
   },
   "author": "Marko2Marko",

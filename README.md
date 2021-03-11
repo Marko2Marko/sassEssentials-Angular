@@ -7,7 +7,7 @@
 	- [ruby](https://www.ruby-lang.org/en/)
 	
 a) Install Ruby on your system (https://rubyinstaller.org/)
-b) run  `> gem install sass " `command
+b) run  `> gem install sass`command
 c) Check the version of the sass installed with this command
 -` sass -v `
 
